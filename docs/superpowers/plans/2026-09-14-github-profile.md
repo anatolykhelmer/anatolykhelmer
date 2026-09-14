@@ -120,7 +120,7 @@ Read the [DeepCover README](https://github.com/anatolykhelmer/deepcover#readme).
 
 ## Person
 
-Based in Israel. I train judo.
+Based in Israel. I love judo.
 
 TypeScript, Node, React, Jest/Vitest.
 
@@ -152,7 +152,7 @@ required = [
     "https://github.com/anatolykhelmer/skills",
     "https://github.com/anatolykhelmer/kaizen-backlog",
     "Based in Israel",
-    "I train judo",
+    "I love judo",
     "TypeScript, Node, React, Jest/Vitest",
     "https://www.linkedin.com/in/anatoly-khelmer/",
 ]

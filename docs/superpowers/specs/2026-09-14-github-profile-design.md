@@ -106,7 +106,7 @@ No extra repos in this list.
 Quiet block after the work. Required facts only:
 
 - Based in Israel
-- Trains judo — one calm sentence, no rank, no club, no emoji. Humor stays in the lede/exhibit; do not force a joke here.
+- Judo: the README sentence is `I love judo.` — no rank, no club, no emoji. Humor stays in the lede/exhibit; do not force a joke here.
 - Stack, one line: TypeScript, Node, React, Jest/Vitest
 - [LinkedIn](https://www.linkedin.com/in/anatoly-khelmer/)
 
