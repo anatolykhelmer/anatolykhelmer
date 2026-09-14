@@ -29,6 +29,7 @@ Read the [DeepCover README](https://github.com/anatolykhelmer/deepcover#readme).
 - [food-tracker](https://github.com/anatolykhelmer/food-tracker) — nutrition tracker; browser only, no account
 - [judo-scoreboard](https://github.com/anatolykhelmer/judo-scoreboard) / [judo-core](https://github.com/anatolykhelmer/judo-core) — contest UI and tournament engine, no server at contest time
 - [skills](https://github.com/anatolykhelmer/skills) — agent skills as git-native tools, not a prompt folder
+- [kaizen-backlog](https://github.com/anatolykhelmer/kaizen-backlog) — git-native backlog for how you work with Cursor and Claude
 
 ## Person
 

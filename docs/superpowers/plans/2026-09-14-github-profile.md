@@ -17,7 +17,7 @@
 - No copy-paste `npx` one-liner. Call to action is a link to the DeepCover README.
 - Markdown only: no HTML layout tricks, no centered `<div>` forests, no visitor pixels.
 - Potato line and tooling-then-local-first order are required. Exhibit heading is exactly `Line coverage is a vibes-based metric`.
-- Pinned repos, in this order: `deepcover`, `khesh`, `judo-core`, `judo-scoreboard`, `food-tracker`, `skills`.
+- Pinned repos, in this order: `deepcover`, `food-tracker`, `judo-core`, `kaizen-backlog`, `khesh`, `skills`.
 - LinkedIn: `https://www.linkedin.com/in/anatoly-khelmer/`. Location: Israel.
 - Account bio, verbatim, ≤160 characters: `Istanbul reports 100% on tests that would still pass if the function returned a potato. DeepCover, TypeScript, local-first.`
 - Do not invent pinned-repo descriptions; keep existing GitHub descriptions.
@@ -116,6 +116,7 @@ Read the [DeepCover README](https://github.com/anatolykhelmer/deepcover#readme).
 - [food-tracker](https://github.com/anatolykhelmer/food-tracker) — nutrition tracker; browser only, no account
 - [judo-scoreboard](https://github.com/anatolykhelmer/judo-scoreboard) / [judo-core](https://github.com/anatolykhelmer/judo-core) — contest UI and tournament engine, no server at contest time
 - [skills](https://github.com/anatolykhelmer/skills) — agent skills as git-native tools, not a prompt folder
+- [kaizen-backlog](https://github.com/anatolykhelmer/kaizen-backlog) — git-native backlog for how you work with Cursor and Claude
 
 ## Person
 
@@ -149,6 +150,7 @@ required = [
     "https://github.com/anatolykhelmer/judo-scoreboard",
     "https://github.com/anatolykhelmer/judo-core",
     "https://github.com/anatolykhelmer/skills",
+    "https://github.com/anatolykhelmer/kaizen-backlog",
     "Based in Israel",
     "I train judo",
     "TypeScript, Node, React, Jest/Vitest",
@@ -288,7 +290,7 @@ Expected: `bio` matches the spec string, `location` is `Israel`, `blog` empty or
 - GitHub profile pins for `anatolykhelmer` (no local files)
 
 **Interfaces:**
-- Consumes: repo names `deepcover`, `khesh`, `judo-core`, `judo-scoreboard`, `food-tracker`, `skills`
+- Consumes: repo names `deepcover`, `food-tracker`, `judo-core`, `kaizen-backlog`, `khesh`, `skills`
 - Produces: those six pinned, in that order
 
 Public GraphQL does not expose a pin mutation (`updateItemsPinnedByViewer` / `updatePinnedItems` are not on `Mutation`). Do not spend time hunting undocumented mutations. Pin in the GitHub UI, then verify with GraphQL.
@@ -305,7 +307,7 @@ query {
   }
 }'
 
-for repo in deepcover khesh judo-core judo-scoreboard food-tracker skills; do
+for repo in deepcover food-tracker judo-core kaizen-backlog khesh skills; do
   gh repo view "anatolykhelmer/$repo" --json name,description
 done
 ```
@@ -317,10 +319,10 @@ Expected: each description is non-empty. Do not PATCH descriptions.
 Open `https://github.com/anatolykhelmer`. Click **Customize your pins**. Uncheck everything that is not in the list. Check exactly:
 
 1. `deepcover`
-2. `khesh`
+2. `food-tracker`
 3. `judo-core`
-4. `judo-scoreboard`
-5. `food-tracker`
+4. `kaizen-backlog`
+5. `khesh`
 6. `skills`
 
 Drag until that visual order matches. Save.
@@ -344,14 +346,14 @@ Expected `nodes` names, in order:
 
 ```
 deepcover
-khesh
-judo-core
-judo-scoreboard
 food-tracker
+judo-core
+kaizen-backlog
+khesh
 skills
 ```
 
-`deepcover-demo-orders`, `woledger`, `kaizen-backlog`, and `train-ticket-graph` must not appear.
+`deepcover-demo-orders`, `woledger`, `judo-scoreboard`, and `train-ticket-graph` must not appear.
 
 ---
 

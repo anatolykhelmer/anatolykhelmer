@@ -30,23 +30,23 @@ The profile is three GitHub surfaces, not one file.
    - Website: empty unless a personal site exists later
 3. **Pinned repos**, exactly these six, in this order:
    1. `deepcover`
-   2. `khesh`
+   2. `food-tracker`
    3. `judo-core`
-   4. `judo-scoreboard`
-   5. `food-tracker`
+   4. `kaizen-backlog`
+   5. `khesh`
    6. `skills`
 
-`deepcover-demo-orders` is linked from the README, not pinned. `woledger`, `kaizen-backlog`, and `train-ticket-graph` stay unpinned.
+`deepcover-demo-orders` and `judo-scoreboard` are linked from the README, not pinned. `woledger` and `train-ticket-graph` stay unpinned.
 
 Pinned repo descriptions (set on GitHub if currently empty or weak; do not invent features):
 
 | Repo | Description to use |
 |---|---|
 | `deepcover` | Keep existing: agentic coverage beyond line coverage / meaningful coverage. |
-| `khesh` | Keep existing offline-first household ledger description. |
-| `judo-core` | Keep existing tournament engine description. |
-| `judo-scoreboard` | Keep existing in-browser IJF scoreboard description. |
 | `food-tracker` | Keep existing privacy-first nutrition tracker description. |
+| `judo-core` | Keep existing tournament engine description. |
+| `kaizen-backlog` | Keep existing git-native continual-improvement backlog description. |
+| `khesh` | Keep existing offline-first household ledger description. |
 | `skills` | Keep existing reusable agent skills description. |
 
 ## README structure
@@ -91,12 +91,13 @@ Call to action: a link to the DeepCover README, not a non-working `npx` command.
 
 ### 4. Also shipping
 
-A short list, one line each, four entries (judo is one field with two repos):
+A short list, one line each. Judo is one field with two repos; `judo-scoreboard` stays in this list even though it is not pinned.
 
 - [khesh](https://github.com/anatolykhelmer/khesh) — offline household ledger, double-entry, IndexedDB
 - [food-tracker](https://github.com/anatolykhelmer/food-tracker) — nutrition tracker; browser only, no account
 - [judo-scoreboard](https://github.com/anatolykhelmer/judo-scoreboard) / [judo-core](https://github.com/anatolykhelmer/judo-core) — contest UI and tournament engine, no server at contest time
 - [skills](https://github.com/anatolykhelmer/skills) — agent skills as git-native tools, not a prompt folder
+- [kaizen-backlog](https://github.com/anatolykhelmer/kaizen-backlog) — git-native backlog for how you work with Cursor and Claude
 
 No extra repos in this list.
 
