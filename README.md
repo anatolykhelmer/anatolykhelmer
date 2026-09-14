@@ -32,7 +32,7 @@ Read the [DeepCover README](https://github.com/anatolykhelmer/deepcover#readme).
 
 ## Person
 
-Based in Israel. I train judo.
+Based in Israel. I love judo.
 
 TypeScript, Node, React, Jest/Vitest.
 
